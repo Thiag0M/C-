@@ -27,7 +27,7 @@ main()
 	result2 = porc2*casos;
 	result3 = porc3*casos;
 	cout<<endl<<"                                      "; 
-    cout<<endl<<"         Três cenários foram criados para um melhor entendimento: "<<endl;
+        cout<<endl<<"         Três cenários foram criados para um melhor entendimento: "<<endl;
 	cout<<" -  No cenário mais pessimista teriamos por volta de " <<result1<<" casos na sua cidade"<<endl;
 	cout<<" -  No cenário intermediário teriamos por volta de "<<result2<<" casos na sua cidade"<<endl;
 	cout<<" -  No cenário mais otimista teriamos por volta de "<<result3<<" casos na sua cidade"<<endl;

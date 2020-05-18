@@ -1,1 +1,36 @@
 //Programa muito simples para calcular a subnotificação de casos de COVID-19 no Brasil
+#include <iostream>
+using namespace std;
+main()
+{
+	setlocale(LC_ALL, "ptb");
+	float mort, casos, calc,porc1, porc2, porc3;
+	int result1, result2, result3;
+	cout<< "Subnotificação de casos de Covid-19 no Brasil"<<endl;
+	cout<<endl<<"                                        ";
+	cout<<endl<< "Digite a quantidade de casos confirmados na sua cidade: ";
+	cin>> casos;
+	cout<< "Digite o número de óbitos por covid na sua cidade: ";
+	cin>> mort;
+	calc = (mort/casos)*100;
+	if (calc <2)
+	{
+	cout<<endl<<"Sua cidade possui uma subnotificação nula";
+	cout<<endl<<"Obrigado por utilizar nossa calculadora :)";	
+	}
+	else
+	{
+	porc1 = calc/2;
+	porc2 = calc/3;
+	porc3 = calc/4;
+	result1 = porc1*casos;
+	result2 = porc2*casos;
+	result3 = porc3*casos;
+	cout<<endl<<"                                      "; 
+    cout<<endl<<"         Três cenários foram criados para um melhor entendimento: "<<endl;
+	cout<<" -  No cenário mais pessimista teriamos por volta de " <<result1<<" casos na sua cidade"<<endl;
+	cout<<" -  No cenário intermediário teriamos por volta de "<<result2<<" casos na sua cidade"<<endl;
+	cout<<" -  No cenário mais otimista teriamos por volta de "<<result3<<" casos na sua cidade"<<endl;
+	cout<<endl<<"Obrigado por utilizar nossa calculadora :)"<<endl;
+	}	
+}

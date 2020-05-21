@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+main()
+{
+	setlocale (LC_ALL, "ptb");
+	int num1, num2, op, result;
+	cout<< "Digite o primeiro número: ";
+	cin>> num1;
+	cout<<endl<< "Digite o segundo número: ";
+	cin>> num2;
+	cout<<endl<<"Digite 1 para adição";
+	cout<<endl<<"Digite 2 para subtração";
+	cout<<endl<<"Digite 3 para multiplicação";
+	cout<<endl<<"Digite 4 para divisão";
+	cout<<endl<<"Qual a sua opção?  ";
+	cin>> op;
+	if (op == 1)
+	{
+	result = (num1+num2);
+	cout<<endl<<"A soma é: "<<result;	
+	}
+	else if (op == 2)
+	{
+	result = (num1-num2);
+	cout<<endl<<"A subtração é: "<<result;	
+	}
+	else if (op == 3)
+	{
+	result = (num1*num2);	
+	cout<<endl<<"A multiplicação é: "<<result;	
+	}
+	else if (op == 4)
+	{
+	result = (num1/num2);
+	cout<<endl<<"A divisão é: "<<result;	
+	}
+    else
+    {
+    cout<<endl<< "Desculpe, opção inválida!!";	
+	}	
+}

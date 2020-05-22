@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+main()
+{
+	setlocale(LC_ALL,"ptb");
+	int lado1, lado2, lado3, calc;
+	cout<<"--------------------------------------";
+	cout<<endl<<"Informe a medida do primeiro lado do triângulo: ";
+	cin>> lado1;
+	cout<<endl<<"Informe a medida do segundo lado do triângulo: ";
+	cin>> lado2;
+	cout<<endl<<"Informe a medida do terceiro lado do triângulo: ";
+	cin>> lado3;
+    if (lado1==lado2 && lado2==lado3 && lado3==lado1)
+    {
+    cout<<endl<<"O triangulo é equilátero";	
+	}
+	else if (lado1!=lado2 && lado2!=lado3 && lado3!= lado1)
+	{
+	cout<<endl<<"O triângulo é isósceles";	
+	}
+	else
+	{
+	cout<<endl<<"O triângulo é escaleno";	
+	}
+}

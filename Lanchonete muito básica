@@ -1,0 +1,36 @@
+#include <iostream> //Lanchonete bem básica v1
+using namespace std;
+main()
+{
+	setlocale(LC_ALL,"ptb");
+	int item, quant;
+	float valor;
+	char *itemm;
+	cout<<"LANCHONETE DO TH";
+	cout<<endl<<"100 - HAMBÚRGUER  -  R$5,50";
+	cout<<endl<<"101 - CACHORRO QUENTE -  R$4,50";
+	cout<<endl<<"102 - MILKSHAKE - R$7,00";
+	cout<<endl<<"103 - PIZZA BROTINHO  -  R$8,00";
+	cout<<endl<<"104  -  CHEESEBURGUER  -  R$8,50";
+	cout<<endl<<"Escolha o seu item, digite o número correspondente: ";
+	cin>> item;
+	cout<<endl<<"Digite quantas unidades: ";
+	cin>> quant;
+	switch (item)
+	{
+	case 100: itemm = "Hamburguer";
+	valor = quant * 5.50; break;
+	case 101: itemm = "Cachorro-quente";
+	valor= quant*4.50; break;
+	case 102: itemm = "Milkshake";
+	valor= quant*7.00; break;
+	case 103: itemm = "Pizza brotinho";
+	valor= quant*8.00; break;
+	case 104: itemm ="Cheeseburguer";
+	valor= quant*8.50; break;
+	default: cout<<"pedido inválido!";	
+	}
+	 
+	cout<<quant<<"x "<<itemm<<" no valor total de R$"<<valor;
+	cout<<endl<<"Volte sempre!";	
+}

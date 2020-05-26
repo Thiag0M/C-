@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+main()
+{
+	setlocale (LC_ALL,"ptb");
+	int num;
+	cout<<"informe um número qualquer: "; 
+	cin>> num;
+	while (num!=-1) // ao escrever "-1" como entrada o programa é finalizado
+	{
+	if (num%2 == 0)
+	{
+	cout<<"O número "<<num<<" é par";
+    }
+	else 
+	{
+	cout<<"O número "<<num<<" é ímpar";
+    }
+    cout<<endl<<"Informe um número qualquer: "; 
+    cin>> num;
+	}
+}

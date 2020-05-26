@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+main()
+{
+	setlocale(LC_ALL,"ptb");
+	int idade, qtd, soma_pesos, soma_idades;
+	float peso, media_pesos, media_idades;
+	qtd = 0;
+	soma_pesos = 0;
+	soma_idades = 0;
+	cout<<"Qual é o seu peso? ";
+	cin>> peso;
+	while (peso != 0) // Ao colocar 0 no peso, a contagem da entrevista é encerrada
+	{
+	cout<<"Qual a sua idade? ";
+	cin>>idade;
+	qtd++;
+	soma_pesos+=peso;
+	soma_idades+=idade;
+	cout<<"Qual é o seu peso?";
+	cin>>peso;	
+	}
+    media_pesos= (soma_pesos/qtd); // determina o peso médio dos entrevistados
+    media_idades= (soma_idades/qtd); // determina a média de idades dos entrevistados
+    cout<<"Foram entrevistadas "<<qtd<<" pessoas";
+    cout<<endl<<"A média das idades é: "<<media_idades; 
+    cout<<endl<<"A média dos pesos é: "<<media_pesos;
+	}
+	

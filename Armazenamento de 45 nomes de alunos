@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>     // permite a utilização do valor string
+using namespace std;
+main()
+{
+	setlocale(LC_ALL,"ptb");
+    string alunos[45];       // vetor de 45 nomes
+	int cont;
+	for (cont=0;cont<=44;cont++) 
+	{
+		cout<<endl<<"Digite o "<<cont+1<<"° aluno: ";
+		cin>>(cont[alunos]);
+	}
+	for (cont=0;cont<=44;cont++)  
+	{
+	cout<<endl<<"O "<<cont+1<<"° aluno é: "<<(cont[alunos]);
+    }
+}
